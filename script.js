@@ -18,7 +18,7 @@ const QUOTES = [
 		"alt": "graydon"
 	},
 	{
-		"src":"./assets/quoteImages/btoh.jpg",
+		"src":"./assets/quoteImages/btoh.jpeg",
 		"name":"The BTOH",
 		"caption":"so cool",
 		"alt":"he is epic"
