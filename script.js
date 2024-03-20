@@ -34,6 +34,12 @@ const QUOTES = [
 		"name": "Happy B-Day",
 		"caption": "Festivity",
 		"alt": "JT"
+	},
+	{
+		"src": "./assets/quoteImages/raymond.jpeg",
+		"name": "Raymond",
+		"caption": "The Badminton Rizzler",
+		"alt": "he gets all the girls"
 	}
 
 
