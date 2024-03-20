@@ -16,7 +16,26 @@ const QUOTES = [
 		"name": "Las Drogas",
 		"caption": "He was a drug dealer",
 		"alt": "graydon"
+	},
+	{
+		"src":"./assets/quoteImages/btoh.jpg",
+		"name":"The BTOH",
+		"caption":"so cool",
+		"alt":"he is epic"
+	},
+	{
+			"src":"./assets/quoteImages/david.jpeg",
+			"name":"David and Adam lovers",
+			"caption":"True love",
+			"alt":"adam+david"
+	},
+	{
+		"src": "./assets/quoteImages/birthday.jpeg",
+		"name": "Happy B-Day",
+		"caption": "Festivity",
+		"alt": "JT"
 	}
+
 
 ];
 
