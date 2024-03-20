@@ -5,12 +5,18 @@ const QUOTES = [
     "caption":"They found true lov",
     "alt":"gay couple"
   },
-{
-    "src":"./assets/quoteImages/india.png",
-    "name":"Hinduism",
-    "caption":"He went to india",
-    "alt":"archondoraydon"
-}
+	{
+	    "src":"./assets/quoteImages/india.png",
+	    "name":"Hinduism",
+	    "caption":"He went to india",
+	    "alt":"archondoraydon"
+	},
+	{
+		"src": "./assets/quoteImages/graydonsilly.png",
+		"name": "Las Drogas",
+		"caption": "He was a drug dealer",
+		"alt": "graydon"
+	}
 
 ];
 
