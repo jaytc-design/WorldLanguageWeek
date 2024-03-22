@@ -52,30 +52,47 @@
 		<div class="row align-items-start float-bottom">
 			<div class="col">
 				<h1>Mandarin</h1>
-				<img class="rounded-circle" src="./assets/flags/china.jpg">
+				<button id="0" data-bs-toggle="modal" data-bs-target="#infoModal">
+					<img class="rounded-circle" src="./assets/flags/china.jpg">
+				</button>
 			</div>
+			
 			<div class="col">
 				<h1>Spanish</h1>
-				<img class="rounded-circle" src="./assets/flags/spain.png">
+				<button id="1" data-bs-toggle="modal" data-bs-target="#infoModal">
+					<img class="rounded-circle" src="./assets/flags/spain.png">
+				</button>
 			</div>
 			<div class="col">
 				<h1>French</h1>
-				<img class="rounded-circle" src="./assets/flags/france.png">
+				<button id="2" data-bs-toggle="modal" data-bs-target="#infoModal">
+					<img class="rounded-circle" src="./assets/flags/france.png">
+				</button>
 			</div>
 			<div class="col">
 				<h1>ASL</h1>
-				<img class="rounded-circle" src="./assets/flags/asl.png">
+				<button id="3" data-bs-toggle="modal" data-bs-target="#infoModal">
+					<img class="rounded-circle" src="./assets/flags/asl.png">
+				</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" autohide="false">
-		<div class="d-flex">
-			<div class="toast-body">
-				Hello, world! This is a toast message.
+	<div class="modal " tabindex="-1" id="infoModal">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="countryName"></h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<p id="countryInfo"></p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			  </div>
 			</div>
-			<button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-		</div>
+		  </div>
 	</div>
 
 	<footer>

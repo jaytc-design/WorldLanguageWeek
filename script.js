@@ -1,51 +1,53 @@
 const QUOTES = [
-  {
-    "src":"./assets/quoteImages/dilanAlex.JPG",
-    "name":"Dilan Love",
-    "caption":"They found true lov",
-    "alt":"gay couple"
-  },
-	{
-	    "src":"./assets/quoteImages/india.png",
-	    "name":"Hinduism",
-	    "caption":"He went to india",
-	    "alt":"archondoraydon"
-	},
-	{
-		"src": "./assets/quoteImages/graydonsilly.png",
-		"name": "Las Drogas",
-		"caption": "He was a drug dealer",
-		"alt": "graydon"
-	},
-	{
-		"src":"./assets/quoteImages/btoh.jpeg",
-		"name":"The BTOH",
-		"caption":"so cool",
-		"alt":"he is epic"
-	},
-	{
-			"src":"./assets/quoteImages/david.jpeg",
-			"name":"David and Adam lovers",
-			"caption":"True love",
-			"alt":"adam+david"
-	},
-	{
-		"src": "./assets/quoteImages/birthday.jpeg",
-		"name": "Happy B-Day",
-		"caption": "Festivity",
-		"alt": "JT"
-	},
-	{
-		"src": "./assets/quoteImages/raymond.jpeg",
-		"name": "Raymond",
-		"caption": "The Badminton Rizzler",
-		"alt": "he gets all the girls"
-	}
+    {
+        "src":"./assets/quoteImages/badBunny.jpg",
+        "name":"Bad Bunny",
+        "caption":"Do what you love, and don't let anyone tell you that you can't do it",
+        "alt":"Bad bunny"
+    },
 
+    {
+        "src":"./assets/quoteImages/friendshipWealth.jpg",
+        "name":"Mes amis sont ma richesse.",
+        "caption":"My friends are my riches.",
+        "alt":""
+    },
 
+    {
+        "src":"./assets/quoteImages/gold.jpg",
+        "name":"黄金万两容易得，一个知心最难寻。",
+        "caption":"Gold is easy to obtain, a close friend is harder to find.",
+        "alt":"Friendship is worth more than gold"
+    },
+
+    {
+        "src":"./assets/quoteImages/friendshipSign.jpg",
+        "name":"Signing",
+        "caption":"Friendship",
+        "alt":"Signing 'Friendship' in ASL"
+    },
 ];
+const COUNTRIES = [
+  {
+    "title":"Mandarin",
+    "desc":"Mandarin is the offical language of 3 nations: China, Taiwan, Singapore"
+  },
+  {
+    "title": "Spanish",
+    "desc": "Spanish is spoken in 21 nations including: Spain, Mexico, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Cuba, Dominican Republic, Puerto Rico, Argentina, Bolivia, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay, Venezuela, and Equatorial Guinea"
+ 
+  },
+  {
+    "title": "French",
+    "desc": "French is the official language of roughly 28 nations: France, Congo, Canada, Cameroon, Belgium, Ivory Coast, Madagascar, Haiti, Senegal, Burkina Faso, Benin, Guinea, Mali, Togo, Niger, Chad, Switzerland, Central African Republic, Gabon, Burundi, Rwanda, Luxembourg, Djibouti, Equatorial Guinea, Comoros, Vanuatu, Seychelles, Monaco"
+  },
+  {
+    "title": "ASL",
+    "desc": "ASL (American Sign Language) comes from America but is used all around the world!"
+  }
+]
 
-window.onload = function() {
+function loadQuotes() {
     let cmain = document.getElementById("cmain");
     let cindicator = document.getElementById("cindicator");
 
@@ -71,7 +73,7 @@ window.onload = function() {
         let h5 = document.createElement("h5");
         h5.innerHTML = quote.name;
         let p = document.createElement("p");
-        p.innerHTML = quote.caption;
+        p.innerHTML = "\""+quote.caption+"\"";
         carouselCaption.appendChild(h5);
         carouselCaption.appendChild(p);
         carouselItem.appendChild(carouselCaption);
@@ -89,4 +91,15 @@ window.onload = function() {
         button.setAttribute("aria-label", "Slide " + (i + 1));
         cindicator.appendChild(button); 
     }
+}
+
+window.onload = function() {
+    loadQuotes();
+
+    const myModalEl = document.getElementById("infoModal");
+    myModalEl.addEventListener('show.bs.modal', event => {
+      let index = parseInt(event.relatedTarget.id)
+      document.getElementById("countryName").innerHTML = COUNTRIES[index].title
+      document.getElementById("countryInfo").innerHTML = COUNTRIES[index].desc
+    })
 }

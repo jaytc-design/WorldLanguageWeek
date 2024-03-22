@@ -9,6 +9,21 @@ html {
 #content2 {
   margin-top:15vh;
 }
+#content2 button {
+  background:none;
+  height: 150px;
+    width: 150px;
+  margin-right:auto;
+  margin-left:auto;
+  padding:0;
+  border:none;
+}
+
+#infoModal {
+  --bs-modal-bg: rgb(61, 61, 61);
+  --bs-modal-color: rgb(228, 228, 228);
+}
+
 #credits {
   margin:5px;
   margin-right:10px;
@@ -24,6 +39,8 @@ html {
 .col img{
   height: 150px;
   width:150px;
+  margin:none;
+  padding:none;
   object-fit: fill;
 }
 #header {
